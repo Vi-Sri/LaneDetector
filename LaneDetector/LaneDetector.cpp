@@ -8,14 +8,15 @@
 #include <polyfit/polyfit.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
+#include<cmath>
 
 using namespace std;
 
-constexpr double PI(std::acos(-1));
-constexpr uint16_t lineThreshold(50);
-constexpr uint16_t maxIterations(10);
-constexpr uint16_t histHeight(100);
-constexpr uint16_t slices = 15;
+const double PI = acos(-1);
+const uint16_t lineThreshold = 50;
+const uint16_t maxIterations = 10;
+const uint16_t histHeight = 100;
+const uint16_t slices = 15;
 
 LaneDetector::LaneDetector(float resizeRatio , uint16_t width, uint16_t height):
     resizeRatio(resizeRatio),
