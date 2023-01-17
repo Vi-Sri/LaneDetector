@@ -124,7 +124,7 @@ std::vector<std::vector<uint16_t>> LaneDetector::calcLanePoints(cv::Mat& image)
 
       if((*histogram)[j - 1] < minBandHeight)
       {
-        leftBandPos = j;
+        leftBx`andPos = j;
       }
 
       if((*histogram)[j + 1] < minBandHeight)

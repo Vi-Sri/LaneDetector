@@ -41,9 +41,9 @@ protected:
 		GRANSAC::VPFloat Dist = Numer / m_DistDenominator;
 
 		//// Debug
-		//std::cout << "Point: " << ExtPoint2D->m_Point2D[0] << ", " << ExtPoint2D->m_Point2D[1] << std::endl;
-		//std::cout << "Line: " << m_a << " x + " << m_b << " y + "  << m_c << std::endl;
-		//std::cout << "Distance: " << Dist << std::endl << std::endl;
+		std::cout << "Point: " << ExtPoint2D->m_Point2D[0] << ", " << ExtPoint2D->m_Point2D[1] << std::endl;
+		std::cout << "Line: " << m_a << " x + " << m_b << " y + "  << m_c << std::endl;
+		std::cout << "Distance: " << Dist << std::endl << std::endl;
 
 		return Dist;
 	};
